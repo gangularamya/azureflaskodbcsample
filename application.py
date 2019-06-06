@@ -16,11 +16,9 @@ def hello():
     SQLCommand = ("INSERT INTO dbo.employee "
                  "(name, age, place) "
                  "VALUES (?,?,?)")
-    Values = ['b','5','b']
+    Values = ['c','6','c']
     cursor.execute(SQLCommand,Values)
     conn.commit()
-    conn.close()
-
     return "Hello World!"    
 
 if __name__ == "__main__":
