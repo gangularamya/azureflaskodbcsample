@@ -1,9 +1,9 @@
 from flask import Flask
 import pyodbc
 
-server='pythontestmysql.mysql.database.azure.com'
-database='person'
-username='username@pythontestmysql'
+server='pythonsqltest.database.windows.net'
+database='pythonsqltest'
+username='username@pythonsqltest'
 password='Password1'
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ def hello():
     SQLCommand = ("INSERT INTO dbo.employee "
                  "(name, age, place) "
                  "VALUES (?,?,?)")
-    Values = ['t','3','t']
+    Values = ['b','5','b']
     cursor.execute(SQLCommand,Values)
     conn.commit()
     conn.close()
