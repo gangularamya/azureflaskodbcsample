@@ -1,10 +1,10 @@
 from flask import Flask
 import pyodbc
 
-server='servername.database.windows.net'
-database='databasename'
-username='username@username'
-password='password'
+server='pythontestmysql.mysql.database.azure.com'
+database='person'
+username='username@pythontestmysql'
+password='Password1'
 
 app = Flask(__name__)
 
