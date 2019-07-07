@@ -1,5 +1,6 @@
 from flask import Flask
 import pyodbc
+import time
 
 server='pythonsqltest.database.windows.net'
 database='pythonsqltest'
@@ -19,6 +20,9 @@ def hello():
     Values = ['c','6','c']
     cursor.execute(SQLCommand,Values)
     conn.commit()
+    print("Before sleep statement")
+    time.sleep(100)
+    print("After sleep statement")
     return "Hello World!"    
 
 if __name__ == "__main__":
