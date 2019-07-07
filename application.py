@@ -21,7 +21,7 @@ def hello():
     cursor.execute(SQLCommand,Values)
     conn.commit()
     print("Before sleep statement")
-    time.sleep(100)
+    time.sleep(50)
     print("After sleep statement")
     return "Hello World!"    
 
