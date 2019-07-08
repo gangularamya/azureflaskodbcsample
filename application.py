@@ -20,9 +20,9 @@ def hello():
     # Values = ['c','6','c']
     # cursor.execute(SQLCommand,Values)
     # conn.commit()
-    print("Before sleep statement with 200 sec")
-    time.sleep(200)
-    print("After sleep statement with 200 sec")
+    print("Before sleep statement with 180 sec")
+    time.sleep(180)
+    print("After sleep statement with 180 sec")
     return "Hello World!"    
 
 if __name__ == "__main__":
